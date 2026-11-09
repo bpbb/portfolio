@@ -58,14 +58,14 @@
       Robotics (FIBO), King Mongkut's University of Technology Thonburi, with a GPAX of 3.91 / 4.00. My
       work spans two connected areas: robot learning and autonomous mobile robots.</p>
     <p>In robot learning, I work with deep reinforcement learning for legged robots, including continual
-      learning, imitation and inverse reinforcement learning, and sim-to-real transfer to real quadrupeds.
+      learning, imitation and inverse reinforcement learning, and sim-to-real transfer to real robots, including a Unitree B1 quadruped and a stick-insect robot.
       In mobile robotics, I have built LiDAR-based autonomous systems, from self-driving and racing
       vehicles to an EGAT-funded robot for cleaning floating solar panels, which was published at IEEE
-      RAAI 2025. I am currently a research intern at the BRAIN Lab, VISTEC.</p>
+      RAAI 2025.</p>
     <p>I enjoy working across the full robot stack, from embedded control and sensors to simulation and
       learning-based control, and I value seeing ideas work on real hardware. Outside research, I have
-      been a teaching assistant at FIBO since 2024 and have led academic programmes for robotics camps,
-      which have taught me to explain technical ideas clearly and work well in teams.</p>
+      been a teaching assistant at FIBO and have taken leadership roles in student
+      activities, which have taught me to explain technical ideas clearly and work well in teams.</p>
     <ul class="interests">
       <li>Deep Reinforcement Learning</li>
       <li>Sim-to-Real Transfer</li>
@@ -81,8 +81,10 @@
     <h2>Experience</h2>
 
     <article class="entry">
-      <!-- LOGO: replace with <img class="logo" src="assets/media/vistec.png" alt="VISTEC"> -->
-      <div class="logo placeholder"><span>Logo</span></div>
+      <div class="logos">
+        <img class="logo" src="assets/media/brain_vistec_logo.png" alt="BRAIN Lab, VISTEC">
+        <img class="logo" src="assets/media/vistec_logo.png" alt="VISTEC">
+      </div>
       <div>
         <div class="entry-head"><h3>Research Intern</h3><span class="when">Jun 2026 – Nov 2026</span></div>
         <p class="org">BRAIN Lab, School of Information Science and Technology (IST), VISTEC</p>
@@ -96,7 +98,10 @@
     </article>
 
     <article class="entry">
-      <div class="logo placeholder"><span>Logo</span></div>
+      <div class="logos">
+        <img class="logo" src="assets/media/fibo_logo.png" alt="FIBO">
+        <img class="logo" src="assets/media/kmutt_semi_logo.png" alt="KMUTT">
+      </div>
       <div>
         <div class="entry-head"><h3>Teaching Assistant (Super TA)</h3><span class="when">Aug 2024 – Present</span></div>
         <p class="org">Institute of Field Robotics (FIBO), KMUTT</p>
@@ -117,7 +122,7 @@
   <section id="education" class="wrap">
     <h2>Education</h2>
     <article class="entry">
-      <div class="logo placeholder"><span>Logo</span></div>
+      <img class="logo" src="assets/media/kmutt_logo.png" alt="KMUTT">
       <div>
         <div class="entry-head"><h3>King Mongkut's University of Technology Thonburi</h3><span class="when">2023 – May 2027 (Expected)</span></div>
         <p class="org">B.Eng. Robotics and Automation Engineering, Institute of Field Robotics (FIBO)</p>
@@ -171,7 +176,7 @@
     </article>
 
     <article class="project" id="p-b1">
-      <img class="media" src="assets/media/unitree_b1.jpeg" alt="Unitree B1 quadruped walking on hardware" loading="lazy">
+      <video class="media" src="assets/media/unitree_b1.mp4" poster="assets/media/unitree_b1.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>Sim-to-Real Transfer on a Unitree B1</h3><span class="when">Jun – Jul 2026</span></div>
         <p class="org">BRAIN Lab, VISTEC</p>
@@ -188,43 +193,33 @@
     </article>
 
     <article class="project" id="p-crl">
-      <img class="media natural" src="assets/media/crl.jpeg" alt="Unitree Go2 learning five locomotion tasks in sequence" loading="lazy">
+      <video class="media wide" src="assets/media/crl.mp4" poster="assets/media/crl.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
-        <div class="entry-head"><h3>Continual RL for Quadruped Locomotion</h3><span class="when">Feb – May 2026</span></div>
-        <ul>
-          <li>Surveyed and compared continual-learning methods for mitigating catastrophic forgetting,
-            such as EWC, policy distillation and Learning without Forgetting.</li>
-          <li>Applied the selected methods to reinforcement learning locomotion on a Unitree Go2 in Isaac Lab.</li>
-          <li>Benchmarked policy retention and transfer across sequential locomotion tasks.</li>
-        </ul>
-        <ul class="tags"><li>Deep Reinforcement Learning</li><li>Continual Learning</li><li>Legged Locomotion</li><li>Isaac Lab</li></ul>
-      </div>
-    </article>
-
-    <article class="project" id="p-amp">
-      <img class="media natural" src="assets/media/amp_crl.jpeg" alt="Go2 gaits learned with Adversarial Motion Priors" loading="lazy">
-      <div class="project-body">
-        <div class="entry-head"><h3>AMP-Anchored Continual RL</h3><span class="when">Apr – May 2026</span></div>
+        <div class="entry-head"><h3>Continual RL for Quadruped Locomotion with Adversarial Motion Priors</h3><span class="when">Feb – May 2026</span></div>
         <p class="org">Course Research Project, Deep Reinforcement Learning · <a href="https://github.com/bpbb/FRA503-DRL-Project">GitHub</a></p>
-        <p>Can a single policy on a Unitree Go2 learn three incompatible gaits in sequence (Trot, then
-          Canter, then Turn) without forgetting earlier ones, while keeping the motion natural?</p>
+        <p>Can a single policy on a Unitree Go2 learn new locomotion tasks in sequence without forgetting
+          earlier ones, while keeping the motion natural?</p>
         <ul>
+          <li>Surveyed and compared continual-learning methods for mitigating catastrophic forgetting, such as
+            EWC, policy distillation and Learning without Forgetting, and benchmarked policy retention and
+            transfer across a sequence of locomotion tasks.</li>
           <li>Extended Learning without Forgetting to continuous actions as a KL penalty towards frozen
-            teacher policies, with a weight that adapts to how well earlier gaits are retained.</li>
-          <li>Added Adversarial Motion Priors (AMP), a discriminator trained on Go2 motion clips used as a
-            style reward, to anchor behaviour to reference motions and stop unnatural shortcuts such as
-            sliding. Compared universal, per-task and continuously trained discriminators with fixed and
-            adaptive reward blending.</li>
+            teacher policies, with a weight that adapts to how well earlier skills are retained.</li>
+          <li>Extended the framework with Adversarial Motion Priors (AMP), a discriminator trained on Go2
+            motion clips used as a style reward, to anchor behaviour to reference motions and stop unnatural
+            shortcuts such as sliding. Compared universal, per-task and continuously trained discriminators
+            with fixed and adaptive reward blending.</li>
           <li>Trained with PPO in Isaac Lab using 4,096 parallel environments.</li>
-          <li>Without retention, earlier gaits dropped by 32–40%. With LwF + AMP, Trot reached 0.824, above
-            the Trot-only specialist (0.746), and the newest task reached 0.679.</li>
+          <li>On three gaits learned in sequence (Trot, Canter, Turn): without retention, earlier gaits dropped
+            by 32–40%. With LwF + AMP, Trot reached 0.824, above the Trot-only specialist (0.746), and the
+            newest task reached 0.679.</li>
         </ul>
-        <ul class="tags"><li>Continual Learning</li><li>Imitation Learning</li><li>PPO</li><li>PyTorch</li><li>Isaac Lab</li></ul>
+        <ul class="tags"><li>Deep Reinforcement Learning</li><li>Continual Learning</li><li>Imitation Learning</li><li>Legged Locomotion</li><li>PyTorch</li><li>Isaac Lab</li></ul>
       </div>
     </article>
 
     <article class="project" id="p-s2s">
-      <img class="media natural" src="assets/media/sim2sim_go2.jpeg" alt="Unitree Go2 policy in Isaac Lab and in MuJoCo" loading="lazy">
+      <video class="media natural" src="assets/media/sim2sim_go2.mp4" poster="assets/media/sim2sim_go2.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>Sim-to-Sim Transfer on a Unitree Go2</h3><span class="when">Feb 2026</span></div>
         <p class="org"><a href="https://github.com/bpbb/sim2sim_project">GitHub</a></p>
@@ -262,7 +257,7 @@
     </article>
 
     <article class="project" id="p-carver">
-      <img class="media portrait" src="assets/media/carver.jpeg" alt="CARVER autonomous vehicle" loading="lazy">
+      <video class="media natural" src="assets/media/carver.mp4" poster="assets/media/carver.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>CARVER Autonomous Driving Car</h3><span class="when">Aug – Dec 2025</span></div>
         <p class="org">Team project · <a href="https://github.com/Whan000/CARVER-GEN3">GitHub</a></p>
@@ -279,7 +274,7 @@
     </article>
 
     <article class="project" id="p-f1t">
-      <img class="media" src="assets/media/f1tenth.jpeg" alt="F1TENTH 1:10-scale vehicle" loading="lazy">
+      <video class="media natural" src="assets/media/f1tenth.mp4" poster="assets/media/f1tenth.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>F1TENTH Autonomous Racing Vehicle</h3><span class="when">Mar – May 2026</span></div>
         <p class="org">Team project · <a href="https://github.com/pboon09/carver_f1tenth">GitHub</a></p>
@@ -295,7 +290,7 @@
     <p class="group">Control, Vision and Embedded Systems</p>
 
     <article class="project" id="p-rip">
-      <img class="media natural" src="assets/media/inverted_pendulum.jpeg" alt="Rotary inverted pendulum and its ROS 2 visualisation" loading="lazy">
+      <video class="media natural" src="assets/media/inverted_pendulum.mp4" poster="assets/media/inverted_pendulum.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>Rotary Inverted Pendulum</h3><span class="when">Aug – Dec 2025</span></div>
         <p class="org">Team project · <a href="https://github.com/pboon09/FRA-Rotary-Inverted-Pendulum">GitHub</a></p>
@@ -311,7 +306,7 @@
     </article>
 
     <article class="project" id="p-flood">
-      <img class="media natural" src="assets/media/floodnav.jpeg" alt="FloodNav rescue routes and flood depth maps" loading="lazy">
+      <video class="media natural" src="assets/media/floodnav.mp4" poster="assets/media/floodnav.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>FloodNav: Intelligent Navigation for Flood Rescue</h3><span class="when">Sep – Nov 2025</span></div>
         <p class="org">Team project</p>
@@ -326,7 +321,7 @@
     </article>
 
     <article class="project" id="p-robocon">
-      <div class="media placeholder"><span>Photo / video · Robocon robot</span></div>
+      <img class="media natural" src="assets/media/tpa_super_dunk.jpeg" alt="Intel RealSense depth and colour streams of the basketball hoop" loading="lazy">
       <div class="project-body">
         <div class="entry-head"><h3>TPA Super Dunk, ABU Robocon 2025</h3><span class="when">Apr – May 2025</span></div>
         <ul>
@@ -339,7 +334,7 @@
     </article>
 
     <article class="project" id="p-plotter">
-      <img class="media" src="assets/media/2dof_plotter.jpeg" alt="2-DOF vertical plotter writing on a whiteboard" loading="lazy">
+      <video class="media wide" src="assets/media/2dof_plotter.mp4" poster="assets/media/2dof_plotter.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>2-DOF Vertical Plotter</h3><span class="when">Jan – May 2025</span></div>
         <ul>
@@ -352,7 +347,7 @@
     </article>
 
     <article class="project" id="p-crab">
-      <img class="media" src="assets/media/soft-shell_crab.jpeg" alt="Soft-shell crab harvesting system" loading="lazy">
+      <video class="media natural" src="assets/media/soft-shell_crab.mp4" poster="assets/media/soft-shell_crab.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>Automated Soft-Shell Crab Harvesting System</h3><span class="when">Aug – Nov 2024</span></div>
         <ul>
@@ -367,7 +362,7 @@
     </article>
 
     <article class="project" id="p-squash">
-      <img class="media portrait" src="assets/media/ball_launcher.jpeg" alt="Automatic squash ball launcher" loading="lazy">
+      <video class="media natural" src="assets/media/ball_launcher.mp4" poster="assets/media/ball_launcher.jpeg" autoplay muted loop playsinline controls preload="metadata"></video>
       <div class="project-body">
         <div class="entry-head"><h3>Automatic Squash Ball Launcher</h3><span class="when">Jan – May 2024</span></div>
         <ul>
